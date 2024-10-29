@@ -1,7 +1,0 @@
-duckduckgo_search==5.3.1b1
-einops
-git+https://github.com/InternLM/lagent.git
-lmdeploy
-termcolor
-transformers==4.41.0
-gradio==5.1.0

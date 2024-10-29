@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QVZFKZEW0F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-QVZFKZEW0F');
+  </script>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Vision Search Assistant: Empower Vision-Language Models as Multimodal Search Engines</title>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="static/images/cuhk.png">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Vision Search Assistant: Empower Vision-Language Models as Multimodal Search Engines</h1>
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
+            <span class="author-block">
+              <a href="https://github.com/cnzzx">Zhixin Zhang<sup>1</sup></a>,
+            </span>
+            <span class="author-block">
+              <a href="https://invictus717.github.io/">Yiyuan Zhang<sup>1,2†</sup></a>,
+            </span>
+            <span class="author-block">
+              <a href="https://dingxiaohan.xyz/">Xiaohan Ding<sup>3</sup></a>,
+            </span>
+            <span class="author-block">
+              <a href="http://xyue.io/">Xiangyu Yue<sup>1</sup></a>
+            </span>
+            <br>
+            <span class="author-block">
+              <sup>1</sup>MMLab, CUHK
+              &nbsp;
+              <sup>2</sup>Shanghai AI Lab
+              &nbsp;
+              <sup>3</sup>Tencent
+              <br>
+              <sup>†</sup>Corresponding Author
+            </span>
+          </div>
+          <!-- arXiv link -->
+          <span class="link-block">
+            <a href="https://arxiv.org/abs/2410.21220" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+            </a>
+          </span>
+          <!-- Github link -->
+          <span class="link-block">
+            <a href="https://github.com/cnzzx/VSA" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+            </a>
+          </span>
+          <!-- arXiv pdf link -->
+          <span class="link-block">
+            <a href="https://arxiv.org/pdf/2410.21220" target="_blank" class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fas fa-file-pdf"></i>
+              </span>
+              <span>PDF</span>
+            </a>
+          </span>
+          <!-- HF Space link -->
+          <a href="https://huggingface.co/spaces/Yiyuan/VSA">
+            <img src="static/icons/huggingface.png" width="45" height="45">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <p align="center">
+        <img src="static/images/teaser.png" alt="Teaser" height="85%" width="85%"/>
+      </p>
+      <h2 class="subtitle has-text-centered">
+        Vision Search Assistant acquires unknown visual knowledge through web search. 
+        <br>
+        Above is an intuitive comparison of answering the user's question with an unseen image.
+        <br>
+        Vision Search Assistant is developed based on LLaVA-1.6-7B and its ability to 
+        <br>
+        answer the question on unseen images outperforms the state-of-the-art models
+        <br>
+        including LLava-1.6-34B, Qwen2-VL-72B, and InternVL2-76B.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero ">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          Search engines enable the retrieval of unknown information 
+          with texts. However, traditional methods fall short
+          when it comes to understanding unfamiliar visual content,
+          such as identifying an object that the model has never seen
+          before. This challenge is particularly pronounced for large
+          Vision Language Models (VLMs): if the model has not been
+          exposed to the object depicted in an image, it struggles to
+          generate reliable answers to the user's question regarding
+          that image. Moreover, as new objects and events continuously 
+          emerge, frequently updating VLMs is impractical due
+          to heavy computational burdens. To address this limitation,
+          we propose <b>Vision Search Assistant</b>, a novel framework 
+          that facilitates collaboration between VLMs and web
+          agents. This approach leverages VLMs' visual understanding 
+          capabilities and web agents' real-time information access 
+          to perform open-world Retrieval-Augmented Generation 
+          via the web. By integrating visual and textual representations 
+          through this collaboration, the model can provide informed 
+          responses even when the image is novel to the system. 
+          Extensive experiments conducted on both open-set
+          and closed-set QA benchmarks demonstrate that the Vision
+          Search Assistant significantly outperforms the other models
+          and can be widely applied to existing VLMs.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper method -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Vision Search Assistant</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/framework.png" alt="framework"/>
+          <p>
+            <b>Illustration of Vision Search Assistant framework.</b>
+            We first identify the critical objects and generate their descriptions considering their
+            correlations, named Correlated Formulation, using the Vision Language Model (VLM). 
+            We then use the LLM to generate sub-questions that leads to the final answer, which 
+            is referred to as the Planning Agent. The web pages returned from the search engine are analyzed,
+            selected, and summarized by the same LLM, which is referred to as the Searching Agent. 
+            We use the original image, the user's prompt, the Correlated Formulation together with 
+            the obtained web knowledge to generate the final answer. Vision Search Assistant produces 
+            reliable answers, even for novel images, by leveraging the collaboration between VLM 
+            and web agents to gather visual information from the web effectively.
+          </p>
+        </div>
+        <!-- <h2 class="title is-3">Visual Content Formulation</h2>
+        <div class="content has-text-justified">
+          The Visual Content Formulation is proposed to extract the
+          object-level descriptions and correlations among objects in
+          an image, which can avoid visual redundancy of the image.
+        </div> -->
+        <h2 class="title is-3">Web Knowledge Search: The Chain of Search</h2>
+        <div class="content has-text-justified">
+          <p>
+            The core of Web Knowledge Search is an iterative algorithm named Chain of Search, which is designed to obtain
+            the comprehensive web knowledge of the correlated formulations.
+          </p>
+          <img src="static/images/chainofsearch.png" width="auto" height="75%" alt="framework"/>
+          <p>
+            Here, we deduce the update of the directed graph when k = 1, 2, ..., and web knowledge is progressively extracted from each update.
+            For example, in the 1st update, we generate sub-questions based on V_0. Each question will be sent to 
+            the search engine and the model will receive a returned set of web pages. The content of those pages
+            is summarized by the LLM to obtain web knowledge at the first step X_w^1. 
+          </p>
+        </div>
+        <!-- <h2 class="title is-3">Collaborative Generation</h2>
+        <div class="content has-text-justified">
+          <p>
+            We use the original image, the user's initial prompt, and the Correlated Formulations 
+            together with the obtained web knowledge to collaboratively generate the final answer 
+            with the VLM.
+          </p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper method -->
+
+
+<div class="columns is-centered has-text-centered">
+  <HR align=center style="border:3 double #000000" width="80%" SIZE=5>
+</div>
+
+
+<!-- Result -->
+<!-- <section class="section hero is-light"> -->
+<section class="hero section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Samples</h2>
+        <div class="content has-text-justified">
+          <div class="content has-text-justified">
+          </div>
+          <div class="content has-text-justified">
+            <img src="static/images/longdemo.png" alt="main"/>
+            <p>
+              We present series of demos of Vision Search Assistant on <b>novel images</b>, <b>novel events</b>, 
+              and <b>in-the-wild scenarios</b>. Vision Search Assistant delivers promising potential as a 
+              powerful multimodal engine.
+            </p>
+          </div>
+        </div>
+        <h2 class="title is-3">Ablation</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/ablation_a.png" alt="av2"/>
+          <p>
+            <b>Ablation Study on "What to Search".</b> We use the object-level description to avoid the visual redundancy of the image.
+            If we use the image-based caption, the search agent can not precisely focus on the key information (the handbag in this figure).
+          </p>
+        </div>
+        <div class="content has-text-justified">
+          <img src="static/images/ablation_b.png" alt="av2"/>
+          <p>
+            <b>Ablation Study on "How to search".</b> We propose the <i>"Chain of Search"</i> to progressively obtain related web knowledge for VLMs.
+            In this sample, the agent should first search for <i>"Which conference did this paper submit to"</i> and then find <i>"Best papers of ICML 2024"</i>.
+            Conversely, it's difficult to directly obtain the required knowledge since the page-rank method prefers more hyper-link pages instead of exact relevance,
+            especially when there are multi-hop associations.
+          </p>
+        </div>
+        <div class="content has-text-justified">
+          <img src="static/images/ablation_c.png" alt="av2"/>
+          <p>
+            <b>Ablation Study on "Complex Scenarios"</b>. We use the visual correlation to improve the ability in multiple-object scenarios.
+            In this sample, the caption of Biden can not answer the questions on the groupwise debate, the visual correlation ("debate" in this demo) between Trump can effectively improve the answer quality.
+          </p>
+        </div>
+        <h2 class="title is-3">Open-Set Results</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/open-set.png" alt="nuscenes"/>
+          <p>
+            <b>Open-Set Evaluation.</b> We conduct a human expert evaluation on open-set QA tasks. Vision Search Assistant significantly outperformed Perplexity.ai Pro and GPT-4o-Web across three key objectives: factuality, relevance, and supportiveness.
+          </p>
+        </div>
+        <h2 class="title is-3">Closed-Set Results</h2>
+        <div class="content has-text-justified">
+          <img src="static/images/closed-set.png" alt="av2"/>
+          <p>
+            <b>Closed-Set Evaluation on the LLaVA-W benchmark.</b> We use GPT-4o (0806) for evaluation. Naive search here denotes the VLM with Google image search.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End result -->
+
+
+<!-- Citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    If you find our work useful, please cite our paper. BibTex code is provided below:
+    <pre><code>@article{zhang2024visionsearchassistantempower,
+  title={Vision Search Assistant: Empower Vision-Language Models as Multimodal Search Engines},
+  author={Zhang, Zhixin and Zhang, Yiyuan and Ding, Xiaohan and Yue, Xiangyu},
+  journal={arXiv preprint arXiv:2410.21220},
+  year={2024}
+}</code></pre>
+  </div>
+</section>
+<!-- End citation -->
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+<!-- End of Statcounter Code -->
+
+</body>
+</html>
